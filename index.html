@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кликер Королевства Яблок - Финальная Версия</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <h1>🍏 Кликер Королевства Яблок 🍏</h1>
+    <button id="start-game-button">Начать игру</button>
+    <button id="exit-game-button">Выйти из игры</button>
+  </div>
+
+  <!-- Main Game Container (hidden by default until start is pressed) -->
+  <div id="game-container" class="hidden">
+    <div id="header">
+      <div id="apple-count">Яблоки: 0</div>
+      <div id="currency-count">Золото: 0</div>
+    </div>
+    <button id="click-button">Нажмите, чтобы собрать 🍎</button>
+    
+    <!-- Store UI -->
+    <div id="store">
+      <h2>Магазин Улучшений</h2>
+      <button id="click-upgrade">Увеличить силу клика (Стоимость: 50 яблок)</button>
+      <button id="auto-collector">Купить Авто-Сборщик (Стоимость: 100 яблок)</button>
+      <button id="special-item">Купить Специальный Предмет (Стоимость: 500 яблок, 10 золота)</button>
+    </div>
+    
+    <!-- Quests & Characters -->
+    <div id="quests">
+      <h2>Задания</h2>
+      <p>Выполняйте задания, чтобы получать награды!</p>
+      <button id="start-quest">Начать задание по сбору</button>
+      <div id="quest-status">Активных заданий нет</div>
+    </div>
+    
+    <!-- Crafting System -->
+    <div id="crafting">
+      <h2>Создание предметов</h2>
+      <p>Создавайте уникальные предметы с помощью яблок и золота!</p>
+      <button id="craft-fertilizer">Создать специальное удобрение (Стоимость: 150 яблок)</button>
+      <button id="craft-golden-apple">Создать золотое яблоко (Стоимость: 100 яблок, 5 золота)</button>
+      <div id="craft-status">Предметы еще не созданы</div>
+    </div>
+    
+    <!-- Mini-Game -->
+    <div id="mini-game">
+      <h2>Мини-игра: Ловец Яблок</h2>
+      <button id="start-mini-game">Начать мини-игру</button>
+      <div id="mini-game-status">Игра не начата</div>
+    </div>
+    
+    <!-- Multiplayer & Achievements -->
+    <div id="multiplayer">
+      <h2>Многопользовательский Режим</h2>
+      <button id="start-multiplayer">Соревнуйтесь с другими игроками!</button>
+      <div id="multiplayer-status">Нет подключения</div>
+    </div>
+    
+    <div id="achievements">
+      <h2>Достижения</h2>
+      <ul id="achievements-list">
+        <li id="achievement-clicker">100 кликов - Не достигнуто</li>
+        <li id="achievement-collector">Соберите 1000 яблок - Не достигнуто</li>
+      </ul>
+    </div>
+
+    <!-- Leaderboard -->
+    <div id="leaderboard">
+      <h2>Таблица Лидеров</h2>
+      <div id="leaderboard-status">Скоро появится...</div>
+    </div>
+    
+    <!-- Credits -->
+    <div id="credits">
+      <p>Создал игру: Serapin Andrey</p>
+      <p>Все права защищены © 2024</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
